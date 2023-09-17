@@ -7,80 +7,64 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <title>Aer Lingus</title>
   </head>
   <body>
-    <div>
+    <div class="main">
       <img
         class="logo-img"
         src="https://logos-world.net/wp-content/uploads/2023/01/Aer-Lingus-Logo-500x281.png"
-        alt=""
-      />
-      <div class="my-1 ">
+        alt=""/>
+      <div class="navigation my-1 ">
         <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">General</button>
         <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">SLA</button>
         <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">FHR</button>
-        <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">
-          Licenses Aapprovals
-        </button>
-        <button class="top-button mt-lg-1 mt-2 py-0 px-2 fs-6 border-0">
-          Approved Staff
-        </button>
+        <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">Licenses Aapprovals</button>
+        <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">Approved Staff</button>
         <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">Aircraft</button>
         <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">Delay Codes</button>
-        <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">
-          Flight Numbers
-        </button>
+        <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">Flight Numbers</button>
         <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0">Schedule</button>
-        <button
-          class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0 fw-medium border-top border-4 border-black"
-        >
-          Library
-        </button>
+        <button class="top-button py-0 px-2 mt-lg-1 mt-2 fs-6 border-0 fw-medium border-top border-4 border-black">Library</button>
       </div>
 
-
-      <div class="row align-items-center">
-        <div class="px-1 col-11 ms-2 col-lg-2 text-center text-md-start">
+      <div class="add-search row align-items-center mt-md-1">
+        <div class="add-button px-1 col-11 ms-2 col-lg-2 text-center text-md-start">
             <button class="rounded border-0 py-2 px-5 px-lg-4 fw-medium mt-md-1 mt-2">
-                <span class="rounded bg-success me-1 text-white py-0 px-1"
-                  >+</span
-                >
+                <span class="rounded bg-success me-1 text-white py-0 px-1">+</span>
                 Add
-              </button>
+            </button>
         </div>
-        <div class=" col-12 text-nowrap col-md-auto mt-2 ms-auto">
+        <div class="col-12 text-nowrap col-md-auto mt-2 ms-auto">
           <form class="d-flex row align-items-center justify-content-center justify-content-m-end" role="search">
               <input
-                class="form-control mt-2 mt-md-1 me-2 col-12 col-sm-auto "
+                class="search-bar form-control mt-2 mt-md-1 me-2 col-12 col-sm-auto "
                 style="width: 14rem"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
               <button
-                class="btn btn-outline-success mt-3 mt-md-1 fw-medium pt-1"
+                class="excel-button btn btn-outline-success mt-3 mt-md-1 fw-medium pt-1"
                 style="width: 9rem"
                 type="submit"
               >
                 Export to Excel
               </button>
               <button
-                class="btn btn-outline-success mx-2 mt-3 mt-md-1 fw-medium pt-1"
+                class="pdf-button btn btn-outline-success mx-2 mt-3 mt-md-1 fw-medium pt-1"
                 style="width: 9rem"
                 type="submit"
               >
                 Export to PDF
               </button>
-              <div class="dropdown mx-3 mt-3 mt-md-1 text-center col-12 col-sm-auto">
+              <div class="entries mx-3 mt-3 mt-md-1 text-center col-12 col-sm-auto">
                   Show
                   <button
                     class="btn btn-outline-secondary rounded-0 dropdown-toggle ms-2 py-0 ps-1 pe-3 text-left"
@@ -99,15 +83,11 @@
               </div>
             </form>
           </div>
-        
-        
       </div>
-    
-    
 
-      <div class="">
+      <div class="navigation">
         <button
-          class="top-button py-0 px-2 fs-6 mt-3 border-0 fw-medium my-1 mx-1 border-top border-4 border-black"
+          class="top-button py-0 px-2 fs-6 mt-2 border-0 fw-medium my-1 mx-1 border-top border-4 border-black"
         >
           All
         </button>
@@ -129,7 +109,7 @@
         <button class="top-button py-0 px-2 mx-1 fs-6 mt-2 border-0">Deleted</button>
       </div>
       
-      <div class="fw-medium fs-5 mt-3 d-flex align-items-center">
+      <div class="delete-data fw-medium fs-5 mt-3 d-flex align-items-center">
         <input
           class="form-check-input border border-5 fs-4 border-black me-3"
           type="radio"
@@ -143,7 +123,8 @@
           delete
         </button>
       </div>
-      <div class="table-responsive align-middle">
+
+      <div class="data-table table-responsive align-middle">
         <table class="table table-bordered border-dark mt-4 align-middle">
           <thead class="text-center">
             <tr class="align-middle">
@@ -186,22 +167,19 @@
                   </tbody>
                 </table>
               </th>
-
               <th scope="col">Attachement</th>
               <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              
               <th class="align-middle text-center" scope="row"><input
                 class="form-check-input border border-3 fs-5 border-black"
                 type="radio"
                 name="radioNoLabel"
                 id="radioNoLabel1"
                 value=""
-                aria-label="..."
-              /></th>
+                aria-label="..."/></th>
               <th scope="row">1</th>
               <td>No young..</td>
               <td></td>
@@ -218,7 +196,6 @@
               <td><span class="bg-warning p-1 rounded-start">View</span><span class="bg-primary p-1">Download</span><span class="bg-danger p-1 rounded-end">Remove</span></td>
             </tr> 
             <tr>
-                
                 <th class="align-middle text-center" scope="row"><input
                     class="form-check-input border border-3 fs-5 border-black"
                     type="radio"
@@ -243,7 +220,6 @@
                 <td><span class="bg-warning p-1 rounded-start">View</span><span class="bg-primary p-1">Download</span><span class="bg-danger p-1 rounded-end">Remove</span></td>
               </tr> 
               <tr>
-                
                 <th class="align-middle text-center" scope="row"><input
                     class="form-check-input border border-3 fs-5 border-black"
                     type="radio"
@@ -270,7 +246,6 @@
           </tbody>
         </table>
       </div>
-
     </div>
 
     <script
